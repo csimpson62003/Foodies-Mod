@@ -1,6 +1,7 @@
 package com.caleb.foodiesmod.Items;
 
 import com.caleb.foodiesmod.FoodiesMod;
+import com.caleb.foodiesmod.Blocks.ModBlocks;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
@@ -17,6 +18,7 @@ public class ModItemGroup {
     .icon(() -> new ItemStack(ModItems.CARROT_CAKE)).entries((displayContext, entries) ->{
 
         entries.add(ModItems.CARROT_CAKE);
+        entries.add(ModBlocks.CARROT_CAKE_BLOCK);
     }).build());
 
     public static void registerItemGroups(){

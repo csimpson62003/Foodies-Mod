@@ -9,7 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item CARROT_CAKE = RegisterItems("carrot_cake", new Item(new FabricItemSettings().food(FoodItems.getFoodComponent(0, 0))));
+    public static final Item CARROT_CAKE = RegisterItems("carrot_cake", new Item(new FabricItemSettings().food(FoodItems.getFoodComponent(50, 50))));
 
 
 //Register Item Method
