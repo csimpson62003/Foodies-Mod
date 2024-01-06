@@ -17,6 +17,8 @@ public class ModItemGroup {
     FabricItemGroup.builder().displayName(Text.translatable("itemgroup.foodies_group"))
     .icon(() -> new ItemStack(ModBlocks.CARROT_CAKE)).entries((displayContext, entries) ->{
         entries.add(ModBlocks.CARROT_CAKE);
+        entries.add(ModItems.CARROT_JUICE);
+        entries.add(ModItems.HUNGER_STICK);
     }).build());
 
     

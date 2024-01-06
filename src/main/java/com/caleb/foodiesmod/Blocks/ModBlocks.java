@@ -19,7 +19,7 @@ public static final Block CARROT_CAKE = registerBlock("carrot_cake", new CarrotC
     }
 
     public static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, new Identifier(FoodiesMod.MOD_ID, name), new BlockItem(block, new Item.Settings()));
+        return Registry.register(Registries.ITEM, new Identifier(FoodiesMod.MOD_ID, name), new BlockItem(block, new Item.Settings().maxCount(1)));
     }
 
     public static void registerModBlocks() {
