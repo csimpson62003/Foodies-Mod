@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:potion",
+      "data": 0
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "foodiesmod:carrot_juice",
+    "count": 1
+  }
+}

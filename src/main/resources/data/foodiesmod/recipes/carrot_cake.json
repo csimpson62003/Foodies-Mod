@@ -1,20 +1,21 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "CCC",
-      "CWC",
-      "CCC"
-    ],
-    "key": {
-      "C": {
-        "item": "minecraft:carrot"
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":[ {
+        "item": "foodiesmod:carrot_juice"
       },
-      "W": {
-        "item": "minecraft:wheat"
+      
+      {
+        "item": "minecraft:cake"
       }
-    },
+    ],
     "result": {
       "item": "foodiesmod:carrot_cake",
       "count": 1
-    }
+    },
+    "remainingItems": [
+      {
+        "item": "minecraft:glass_bottle",
+        "count": 1
+      }
+    ]
   }

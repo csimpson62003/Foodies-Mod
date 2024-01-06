@@ -1,6 +1,7 @@
 package com.caleb.foodiesmod.Items.FoodAndDrinks;
 
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -13,9 +14,9 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 public class DrinkItems extends Item {
-    public DrinkItems() {
-        super(new Item.Settings().maxCount(1)
-                .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.6f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 20*30, 1), 1.0f)
+    public DrinkItems(int hunger, float saturation, StatusEffect effect, int duration, int amplifier, Item recipeRemainder) {
+        super(new Item.Settings().maxCount(1).recipeRemainder(recipeRemainder)
+                .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.6f).alwaysEdible().statusEffect(new StatusEffectInstance(effect, 20*duration, amplifier), 1f)
                         .build())
         );
     }
