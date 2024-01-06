@@ -1,6 +1,6 @@
 {
-    "item.foodiesmod.carrot_cake": "Carrot Cake",
-    "item.foodiesmod.carrot_cake.description": "A delicious cake made with carrots.",
-    "item.foodiesmod.carrot_cake.eat": "You enjoy a slice of carrot cake.",
-    "item.foodiesmod.carrot_cake.effect": "foodiesmod:carrot_cake_effect"
-}
+    "block.foodiesmod.carrot_cake": "Carrot Cake",
+    "block.foodiesmod.carrot_cake.description": "A delicious cake made with carrots.",
+    "block.foodiesmod.carrot_cake.eat": "You enjoy a slice of carrot cake.",
+    "block.foodiesmod.carrot_cake.effect": "foodiesmod:carrot_cake_effect",
+    "item.foodiesmod.carrot_juice.effect.empty":"Carrot Juice"}

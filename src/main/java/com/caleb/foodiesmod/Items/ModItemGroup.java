@@ -15,11 +15,11 @@ public class ModItemGroup {
     public static final ItemGroup FOODIES_GROUP = Registry.register(Registries.ITEM_GROUP,
     new Identifier(FoodiesMod.MOD_ID, "blah"),
     FabricItemGroup.builder().displayName(Text.translatable("itemgroup.foodies_group"))
-    .icon(() -> new ItemStack(ModItems.CARROT_CAKE)).entries((displayContext, entries) ->{
-
-        entries.add(ModItems.CARROT_CAKE);
-        entries.add(ModBlocks.CARROT_CAKE_BLOCK);
+    .icon(() -> new ItemStack(ModBlocks.CARROT_CAKE)).entries((displayContext, entries) ->{
+        entries.add(ModBlocks.CARROT_CAKE);
     }).build());
+
+    
 
     public static void registerItemGroups(){
         FoodiesMod.LOGGER.info("Adding the foodies item group");

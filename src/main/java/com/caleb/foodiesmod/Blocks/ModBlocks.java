@@ -1,7 +1,7 @@
 package com.caleb.foodiesmod.Blocks;
 
 import com.caleb.foodiesmod.FoodiesMod;
-import com.caleb.foodiesmod.Blocks.CustomBlocks.CarrotCakeBlock;
+import com.caleb.foodiesmod.Blocks.CustomBlocks.CarrotCake;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -12,7 +12,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-public static final Block CARROT_CAKE_BLOCK = registerBlock("carrot_cake_block", new CarrotCakeBlock(FabricBlockSettings.create()));
+public static final Block CARROT_CAKE = registerBlock("carrot_cake", new CarrotCake(FabricBlockSettings.create()));
     private static Block registerBlock(String name, Block block) {
     registerBlockItem(name, block);
     return Registry.register(Registries.BLOCK, new Identifier(FoodiesMod.MOD_ID, name), block);
